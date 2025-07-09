@@ -1,0 +1,185 @@
+/* Paleta */
+:root {
+  --principal: #FAC168;
+  --texto: #332A1C;
+  --fondo: #f0d4b3;
+  --acento1: #E2B46E;
+  --acento2: #D9A05B;
+}
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--fondo);
+  color: var(--texto);
+  line-height: 1.6;
+  padding: 40px;
+}
+
+/* Header */
+header {
+  top: 0;
+  background-color: var(--principal);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: var(--texto);
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--texto);
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: var(--acento1);
+}
+
+/* Secciones */
+main section {
+  margin-bottom: 40px;
+  padding: 40px;
+  background-color: #e0ceaae3;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(70, 70, 69, 0.719);
+  max-width: 1450px;
+  margin: 35px auto;
+}
+
+section#Historia div p {
+    text-align: center;
+    padding: 20px;
+}
+
+section#producto div div{
+    display: flex;
+    flex-wrap: wrap;
+    text-align:left;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section#galeria div div div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Títulos */
+h2 {
+  color: var(--acento2);
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h3 {
+  color: var(--texto);
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
+/* Párrafos y listas */
+p, li {
+  font-size: 1rem;
+  margin-bottom: 10px;  
+}
+
+ul {
+  margin-left: 60px;
+  margin-bottom: 20px;
+}
+
+/* Imágenes */
+img {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(51, 42, 28, 0.1);
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+/* Grillas */
+.row{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 20px;
+} 
+
+.row3{
+  display: flex;
+  text-align: center;
+  justify-content:space-evenly;
+  padding: 20px;
+}
+
+.img1{
+    text-align: center;
+    height: auto;
+    width: 100%;
+} 
+
+
+.img2 {
+    text-align: center;
+    gap: 50px;
+    padding: 20px;
+    height: auto;
+}
+
+.img3 {
+  text-align: center;
+    gap: 50px;
+    padding: 20px;
+    height: auto;
+}
+
+.btn-volver{
+  background-color: #daa22c;
+  color: black;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  align-items: right;
+}
+
+/* Footer */
+footer {
+  background-color: var(--principal);
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 40px;
+  font-weight: bold;
+}
